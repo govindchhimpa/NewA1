@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Manicouagan</title>
+<body style="margin:0;background:#000">
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>window.__BG='#0c1a10';window.__TF='brightness(1.7) saturate(1.25) contrast(1.05)';window.__CREDIT='Sentinel-2 cloudless by EOX (CC BY 4.0) · asteroid is an illustration';</script>
+<script src="lib/core.js"></script>
+<script src="data/tiers.js"></script>
+<script src="data/words.js"></script>
+<script src="data/caps.js"></script>
+<script src="scenes/s1_mani.js"></script>
+<script>
+var _files={},_n=0,_d=0;
+TIERS.forEach(function(t){t.pieces.forEach(function(p){_files[p.file]=1;});});
+_n+=Object.keys(_files).length;
+function _ok(){if(++_d>=_n)V.ready=true;}
+var _im={};Object.keys(_files).forEach(function(f){var g=new Image();g.onload=_ok;g.onerror=function(){console.error('tile fail '+f);};g.src='tiles/'+f+'.jpg';_im[f]=g;});
+V.tiers=TIERS.map(function(t){return {name:t.name,always:!!t.always,bb:t.bb,pieces:t.pieces.map(function(p){return {img:_im[p.file],bb:p.bb};})};});
+</script>
+</body>

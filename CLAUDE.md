@@ -33,3 +33,8 @@ humanizer, unlazy, impeccable, task-observer, find-skills, lemo-opuscar, superpo
 - Channel (via Zapier, read 15 Nov 2026): **Geo Labs** (@geojilab, ID `UCwTI_k5jHHxq9fX2rc0dvoQ`), 17 subscribers, 32 videos, satellite-map geography/history Shorts. Facebook Page "Geo Labs" ID `1392638267273489`.
 - **Zapier MCP** is connected (YouTube, Google Drive, Facebook Pages). Saved Zapier skill **"geo labs rundown"** (read-only). Upload/post actions exist but only run when the owner asks.
 - Other connectors seen: Canva (generate-image works), Adobe (no text-to-image), ElevenLabs, vidIQ (no channel linked), Google Drive, Picsart (video only), Metricool. Connectors load only when a session starts; connect at claude.ai/customize/connectors.
+
+## Video kit (added 16 Nov 2026)
+- `video-kit/HANDOFF.md`: read it before any video, upload or Facebook post. It has the channel list, the owner's standing rules, the upload queues, topics already used, and how to build a video with the code in `video-kit/`.
+- Two channels now: **Geo Labs** and **Wrong Until Right** (YouTube `UCFcRtqg_CovnSGdQe4H_Kiw`), plus the Althea Reyes1 Facebook page.
+- Upload words: "upload" = YouTube, "upload fb" = Facebook, "upload fb yt" = both. Videos are now 10 to 20 seconds.

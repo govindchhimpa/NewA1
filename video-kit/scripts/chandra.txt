@@ -1,0 +1,15 @@
+1930. A nineteen-year-old student is sailing from India to England. On the ship, he does the math on how stars die.
+
+His answer is shocking. If a dying star is heavy enough, it cannot settle down quietly. It keeps collapsing. This is the first step toward the idea of black holes.
+
+January 1935. Chandrasekhar presents it in London. In the audience sits Arthur Eddington, the most famous astronomer in the world.
+
+Eddington stands up. He mocks the idea in front of everyone, and calls it nonsense. Nobody defends the young man.
+
+Chandrasekhar is crushed. He leaves for America and moves on to other work.
+
+But the math is right, and the data slowly proves it. Today the limit still carries his name.
+
+In 1983, Chandrasekhar wins the Nobel Prize in Physics.
+
+The boy from the ship was right the whole time.
