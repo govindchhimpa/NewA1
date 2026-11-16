@@ -11,7 +11,6 @@ Read this first in every session. It records what has been built here, how to re
 ## What exists in this repo
 - `.devcontainer/` + README section: GitHub Codespaces setup that clones, builds and starts **FreeLLMAPI** (port 3001). Created, merged to `main`; the Codespace itself hung on "Setting up your codespace" on the phone browser, so the owner switched to Termux.
 - `.claude/skills/`: 44 skills (see below).
-- `emu-war-10s/`: source of a 10 s "Great Emu War" film in the Lemo-Opuscar **rubber-hose** style (see below).
 - `TError404.py`, `LICENSE`, `README.md`: pre-existing.
 
 ## Phone setup that works (Termux, from F-Droid)
@@ -28,8 +27,8 @@ On branch `claude/freellmapi-install-bytsx3` only (not yet merged): watch (brada
 
 ## Film work (lemo-opuscar)
 - Library: `sh .claude/skills/lemo-opuscar/scripts/setup.sh` (clones to `~/lemo-opuscar`), then `... deps voice music`, plus `sh tools/fetch.sh instruments vsco2ce` and `vcsl`.
-- `emu-war-10s/` is the finished project: `build.sh` rebuilds it, `TREATMENT.md` has the plan, `CREDITS` the licences, `emu-war-10s.mp4` the film (10 s, 1080p, -14.1 LUFS), `poster.jpg`, `.srt`. Ignored on purpose: `out/`, `stills/`, wav files.
-- Machine quirks: ffmpeg is 6.x, so `core/render/mux.sh` refuses; use `emu-war-10s/mux6.sh`. Hugging Face is blocked, so `asr_check.py` cannot download Whisper (narration was not speech-checked). `media.canva.com` is blocked, so Canva images cannot be downloaded; give links instead. `SendUserFile` refuses images over 8000 px (zip them).
+- The 10 s rubber-hose "Great Emu War" film project was made and then removed from the repo at the owner's request (it stays in git history, commit 966cafc).
+- Machine quirks: ffmpeg is 6.x, so `core/render/mux.sh` refuses; do the same master by hand (two-pass loudnorm to -14 LUFS, alimiter, grain 3, x264 crf 19). Hugging Face is blocked, so `asr_check.py` cannot download Whisper (narration was not speech-checked). `media.canva.com` is blocked, so Canva images cannot be downloaded; give links instead. `SendUserFile` refuses images over 8000 px (zip them).
 - An earlier 59 s Emu War Short (PIL-drawn scenes, Kokoro voice) and a 20000 px poster lived only in the scratchpad and are gone.
 - Format lesson from the owner's research file (Segment Zero): one true, surprising fact told as a mystery, a paradox hook in the first sentence, 60 s, facts checked. Copy the format, never the channel's name, mascot or stories. Owner's mascot: small round-headed character in a blue cap.
 
