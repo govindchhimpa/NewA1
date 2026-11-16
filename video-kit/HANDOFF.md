@@ -59,9 +59,9 @@ Live on YouTube today: WUR Goldberger `ja0TFOcVo7g`, Avery `qs0CGbhldos`, Payne 
 Posted on Facebook today: GL pages Singapore (restart), Allah Bund, Darvaza; WUR page Wegener (restart), Payne, Leavitt; Althea clips up to file name starting 932560545.
 
 Next in the queues:
-- YouTube WUR: Leavitt, Meitner, Zwicky (all in Drive), then Lemaitre once he saves it.
-- YouTube GL: Nemo, Richat (in Drive), then Diomede and Manicouagan once saved. Tuvalu was never saved to Drive.
-- Facebook GL pages: Nemo, Richat. Facebook WUR: Meitner, Zwicky.
+- YouTube WUR: Leavitt, Meitner, Zwicky, Lemaitre (all in Drive).
+- YouTube GL: Nemo, Richat, Diomede, Manicouagan (all in Drive). Tuvalu was never saved to Drive.
+- Facebook GL pages: Nemo, Richat, Diomede, Manicouagan. Facebook WUR: Meitner, Zwicky, Lemaitre.
 - Althea: next clip file name starts 799824668, then 117772418 (Drive folder "Althea" > "Video").
 - Drive has empty 0-byte copies of darvaza, allah_bund and leavitt: ignore them.
 
