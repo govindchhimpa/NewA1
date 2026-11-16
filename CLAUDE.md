@@ -25,11 +25,9 @@ On branch `claude/freellmapi-install-bytsx3` only (not yet merged): watch (brada
 - Not installed on purpose: claude-mem (needs a background worker and hooks). Plugin hooks from any repo are never installed, only SKILL.md folders and their LICENSE files.
 - Full app clones lived in `/home/user/` (Open-Generative-AI, VoiceStudio, open-seo, claude-video, freellmapi, awesome-freellm-apis). They vanish with the container.
 
-## Film work (lemo-opuscar)
-- Library: `sh .claude/skills/lemo-opuscar/scripts/setup.sh` (clones to `~/lemo-opuscar`), then `... deps voice music`, plus `sh tools/fetch.sh instruments vsco2ce` and `vcsl`.
-- The 10 s rubber-hose "Great Emu War" film project was made and then removed from the repo at the owner's request (it stays in git history, commit 966cafc).
-- Machine quirks: ffmpeg is 6.x, so `core/render/mux.sh` refuses; do the same master by hand (two-pass loudnorm to -14 LUFS, alimiter, grain 3, x264 crf 19). Hugging Face is blocked, so `asr_check.py` cannot download Whisper (narration was not speech-checked). `media.canva.com` is blocked, so Canva images cannot be downloaded; give links instead. `SendUserFile` refuses images over 8000 px (zip them).
-- An earlier 59 s Emu War Short (PIL-drawn scenes, Kokoro voice) and a 20000 px poster lived only in the scratchpad and are gone.
+## Video and image notes
+- The `lemo-opuscar` skill makes films from code; it sets itself up on first use (`sh .claude/skills/lemo-opuscar/scripts/setup.sh`).
+- Machine quirks: `media.canva.com` is blocked, so Canva images cannot be downloaded; give links instead. `SendUserFile` refuses images over 8000 px (zip them).
 - Format lesson from the owner's research file (Segment Zero): one true, surprising fact told as a mystery, a paradox hook in the first sentence, 60 s, facts checked. Copy the format, never the channel's name, mascot or stories. Owner's mascot: small round-headed character in a blue cap.
 
 ## YouTube and connectors
