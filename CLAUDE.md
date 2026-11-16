@@ -1,0 +1,39 @@
+# Project memory: govindchhimpa/NewA1
+
+Read this first in every session. It records what has been built here, how to resume it, and the owner's preferences.
+
+## Owner and preferences
+- Owner: Govind (govindchhimpa). Works **only from an Android phone**: no PC, no server. Replies should be in simple **Hinglish**, short numbered steps, and one step at a time, with screenshots checked before moving on.
+- Goals: run free LLM gateways from the phone, and run a YouTube channel (Shorts, history/geography explainers).
+- Ask before anything outward-facing (YouTube upload, Facebook post, PR merge). Merge to `main` only when asked ("main me merge kar do"); do it through a PR, never push to `main` directly.
+- Never write API keys, passwords or setup codes into this repo. Two keys leaked in chat screenshots earlier (a Google AI Studio key ending `WSqQ`); they should be rotated.
+
+## What exists in this repo
+- `.devcontainer/` + README section: GitHub Codespaces setup that clones, builds and starts **FreeLLMAPI** (port 3001). Created, merged to `main`; the Codespace itself hung on "Setting up your codespace" on the phone browser, so the owner switched to Termux.
+- `.claude/skills/`: 44 skills (see below).
+- `emu-war-10s/`: source of a 10 s "Great Emu War" film in the Lemo-Opuscar **rubber-hose** style (see below).
+- `TError404.py`, `LICENSE`, `README.md`: pre-existing.
+
+## Phone setup that works (Termux, from F-Droid)
+- **FreeLLMAPI** (`github.com/tashfeenahmed/freellmapi`): `pkg install nodejs-lts git termux-api`, clone, `npm install --no-audit --no-fund`, then `termux-wake-lock` and `npm run dev`. Dashboard `http://localhost:5173`, API `http://localhost:3001/v1`. Provider keys go on its Keys page; the unified key (`freellmapi-...`) is what apps use. Groq sign-up failed; Google AI Studio key worked.
+- **OmniRoute** (`npm install -g omniroute`, `mkdir -p ~/.cache`, run `omniroute`): dashboard and API at `http://localhost:20128`. Free no-key providers were broken (Cloudflare needs a browser, UncloseAI closed), so it needs a real provider key (Gemini added, "Import only free models" on). Slow when testing `auto`.
+- **ChatBox** (Android app): custom provider "OpenAI API Compatible", host `http://localhost:3001` (or `:20128`), path `/v1/chat/completions`, models `auto` or `auto/best-chat`, "Improve Network Compatibility" ON. ChatBox's built-in Gemini provider also works with the owner's own key. Copilot "Youtube Manager" holds the Shorts-writer prompt.
+- ChatBox cannot make videos. Videos are made in a Claude session.
+
+## Skills installed (44)
+On `main`: humanizer, unlazy, impeccable, task-observer, find-skills, lemo-opuscar, superpowers (15: brainstorming, writing-plans, executing-plans, systematic-debugging, test-driven-development, verification-before-completion, requesting/receiving-code-review, using-git-worktrees, finishing-a-development-branch, subagent-driven-development, dispatching-parallel-agents, using-superpowers, writing-skills, diagnosing-superpowers), ui-ux-pro-max, design, design-system, ui-styling, brand, banner-design, slides, ppt-master, diagram-design.
+On branch `claude/freellmapi-install-bytsx3` only (not yet merged): watch (bradautomates/claude-video), voicestudio (debpalash/VoiceStudio, AGPL-3.0), and 12 OpenSEO skills (every-app/open-seo; they need the paid OpenSEO MCP connector, not configured).
+- Not installed on purpose: claude-mem (needs a background worker and hooks). Plugin hooks from any repo are never installed, only SKILL.md folders and their LICENSE files.
+- Full app clones lived in `/home/user/` (Open-Generative-AI, VoiceStudio, open-seo, claude-video, freellmapi, awesome-freellm-apis). They vanish with the container.
+
+## Film work (lemo-opuscar)
+- Library: `sh .claude/skills/lemo-opuscar/scripts/setup.sh` (clones to `~/lemo-opuscar`), then `... deps voice music`, plus `sh tools/fetch.sh instruments vsco2ce` and `vcsl`.
+- `emu-war-10s/` is the finished project: `build.sh` rebuilds it, `TREATMENT.md` has the plan, `CREDITS` the licences, `emu-war-10s.mp4` the film (10 s, 1080p, -14.1 LUFS), `poster.jpg`, `.srt`. Ignored on purpose: `out/`, `stills/`, wav files.
+- Machine quirks: ffmpeg is 6.x, so `core/render/mux.sh` refuses; use `emu-war-10s/mux6.sh`. Hugging Face is blocked, so `asr_check.py` cannot download Whisper (narration was not speech-checked). `media.canva.com` is blocked, so Canva images cannot be downloaded; give links instead. `SendUserFile` refuses images over 8000 px (zip them).
+- An earlier 59 s Emu War Short (PIL-drawn scenes, Kokoro voice) and a 20000 px poster lived only in the scratchpad and are gone.
+- Format lesson from the owner's research file (Segment Zero): one true, surprising fact told as a mystery, a paradox hook in the first sentence, 60 s, facts checked. Copy the format, never the channel's name, mascot or stories. Owner's mascot: small round-headed character in a blue cap.
+
+## YouTube and connectors
+- Channel (via Zapier, read 15 Nov 2026): **Geo Labs** (@geojilab, ID `UCwTI_k5jHHxq9fX2rc0dvoQ`), 17 subscribers, 32 videos, satellite-map geography/history Shorts. Facebook Page "Geo Labs" ID `1392638267273489`.
+- **Zapier MCP** is connected (YouTube, Google Drive, Facebook Pages). Saved Zapier skill **"geo labs rundown"** (read-only). Upload/post actions exist but only run when the owner asks.
+- Other connectors seen: Canva (generate-image works), Adobe (no text-to-image), ElevenLabs, vidIQ (no channel linked), Google Drive, Picsart (video only), Metricool. Connectors load only when a session starts; connect at claude.ai/customize/connectors.

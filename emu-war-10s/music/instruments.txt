@@ -1,0 +1,12 @@
+clarinet
+crash
+snare
+sus_cymbal
+trombone
+trombone_stac
+trumpet_mute
+tuba
+tuba_stac
+upright
+xylophone
+banjo (pluck.py)
