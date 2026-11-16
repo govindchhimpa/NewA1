@@ -11,7 +11,7 @@ Read this first in every session. It records what has been built here, how to re
 ## What exists in this repo
 - `.devcontainer/` + README section: GitHub Codespaces setup that clones, builds and starts **FreeLLMAPI** (port 3001). Created, merged to `main`; the Codespace itself hung on "Setting up your codespace" on the phone browser, so the owner switched to Termux.
 - `.claude/skills/`: 44 skills (see below).
-- `TError404.py`, `LICENSE`, `README.md`: pre-existing.
+- `LICENSE`, `README.md`: pre-existing. (`TError404.py`, an obfuscated script inherited from the fork, was removed on 16 Nov 2026 at the owner's request.)
 
 ## Phone setup that works (Termux, from F-Droid)
 - **FreeLLMAPI** (`github.com/tashfeenahmed/freellmapi`): `pkg install nodejs-lts git termux-api`, clone, `npm install --no-audit --no-fund`, then `termux-wake-lock` and `npm run dev`. Dashboard `http://localhost:5173`, API `http://localhost:3001/v1`. Provider keys go on its Keys page; the unified key (`freellmapi-...`) is what apps use. Groq sign-up failed; Google AI Studio key worked.
