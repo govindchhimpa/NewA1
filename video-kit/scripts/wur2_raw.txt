@@ -1,0 +1,19 @@
+cd /home/claude/wur_next && python3 - <<'EOF'
+import json
+f='/root/.claude/projects/-home-claude/14c750a2-aab2-5e18-93b2-1808669e00ec.jsonl'
+cands=[]
+def walk(x):
+    if isinstance(x,str):
+        if 'Mendel' in x and 'Snow' in x and 'Margulis' in x and 'Next story' in x and 'continued from a previous' not in x[:200]: yield x
+    elif isinstance(x,dict):
+        for v in x.values(): yield from walk(v)
+    elif isinstance(x,list):
+        for v in x: yield from walk(v)
+for l in open(f):
+    try: d=json.loads(l)
+    except: continue
+    for s in walk(d): cands.append(s)
+print(len(cands),[len(c) for c in cands])
+if cands:
+    c=max(cands,key=len); open('wur2_raw.txt','w').write(c); print(c[:600])
+EOF

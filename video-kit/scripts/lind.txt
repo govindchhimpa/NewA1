@@ -1,0 +1,17 @@
+1747. A British navy ship is sailing, and the sailors are dying. Their gums bleed. Their teeth fall out. Their old wounds open. It is scurvy, and it kills more sailors than enemy guns.
+
+Surgeon James Lind tries something nobody has tried. He splits twelve sick men into six pairs. Each pair gets a different treatment: vinegar, seawater, cider and others.
+
+Two men get oranges and lemons.
+
+Within days, they are on their feet, helping to nurse the others. The rest are still sick.
+
+Lind has proof. He writes it all down and publishes it.
+
+And the navy does nothing. For decades. The doctors argue and the officers shrug.
+
+Only in 1795, forty-eight years after the experiment, does the navy start issuing lemon juice to every sailor.
+
+Scurvy nearly vanishes from the fleet.
+
+The cure was sitting in a ship's kitchen the whole time.
