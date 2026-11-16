@@ -3,6 +3,14 @@
     "perplexity-docs": {
       "type": "http",
       "url": "https://docs.perplexity.ai/mcp"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
     }
   }
 }
