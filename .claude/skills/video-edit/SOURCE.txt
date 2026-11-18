@@ -1,0 +1,1 @@
+Copied from https://github.com/OpenMontageInc/OpenMontage (.claude/skills/video-edit). That repository is AGPL-3.0 (see LICENSE-OpenMontage). The skill itself was bundled there from its original author, whose terms may differ.
