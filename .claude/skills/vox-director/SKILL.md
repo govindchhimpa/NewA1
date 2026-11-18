@@ -1,5 +1,6 @@
 ---
 name: vox-director
+disable-model-invocation: true
 description: >
   Turn ONE topic into a finished Vox-style paper-collage explainer / ad video, end to end
   on the Atlas Cloud API + local ffmpeg — script, collage keyframes, motion, voice-over,

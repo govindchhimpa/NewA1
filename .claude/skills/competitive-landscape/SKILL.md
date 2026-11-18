@@ -1,5 +1,6 @@
 ---
 name: competitive-landscape
+disable-model-invocation: true
 description: Map SEO market leaders, winning content themes, keyword coverage, backlinks, and strategic gaps.
 ---
 
