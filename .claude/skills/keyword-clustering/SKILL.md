@@ -1,5 +1,6 @@
 ---
 name: keyword-clustering
+disable-model-invocation: true
 description: Cluster keywords by intent and map them to existing or proposed pages.
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: seo-report
+disable-model-invocation: true
 description: "Write and save an OpenSEO report as one self-contained HTML page. Use when a skill has finished its research, and whenever the user asks for a report, check-in, or summary, or names a report template."
 ---
 

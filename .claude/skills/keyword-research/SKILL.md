@@ -1,5 +1,6 @@
 ---
 name: keyword-research
+disable-model-invocation: true
 description: "Discover keyword opportunities, evaluate metrics and SERPs, and save/tag promising terms."
 ---
 

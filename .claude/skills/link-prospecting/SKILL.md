@@ -1,5 +1,6 @@
 ---
 name: link-prospecting
+disable-model-invocation: true
 description: Find link prospects, discover contact paths, and draft outreach from SERPs and backlink signals.
 ---
 

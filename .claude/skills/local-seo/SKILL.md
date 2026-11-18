@@ -1,5 +1,6 @@
 ---
 name: local-seo
+disable-model-invocation: true
 description: "Audit a Google Business Profile, compare it to local competitors, and map Maps visibility around a location."
 ---
 

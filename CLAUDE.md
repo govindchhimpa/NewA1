@@ -10,7 +10,7 @@ Read this first in every session. It records what has been built here, how to re
 
 ## What exists in this repo
 - `.devcontainer/` + README section: GitHub Codespaces setup that clones, builds and starts **FreeLLMAPI** (port 3001). Created, merged to `main`; the Codespace itself hung on "Setting up your codespace" on the phone browser, so the owner switched to Termux.
-- `.claude/skills/`: 48 skills (see below).
+- `.claude/skills/`: 53 skills, mapped in `SKILLS.md`.
 - `LICENSE`, `README.md`: pre-existing. (`TError404.py`, an obfuscated script inherited from the fork, was removed on 16 Nov 2026 at the owner's request.)
 
 ## Phone setup that works (Termux, from F-Droid)
@@ -19,8 +19,12 @@ Read this first in every session. It records what has been built here, how to re
 - **ChatBox** (Android app): custom provider "OpenAI API Compatible", host `http://localhost:3001` (or `:20128`), path `/v1/chat/completions`, models `auto` or `auto/best-chat`, "Improve Network Compatibility" ON. ChatBox's built-in Gemini provider also works with the owner's own key. Copilot "Youtube Manager" holds the Shorts-writer prompt.
 - ChatBox cannot make videos. Videos are made in a Claude session.
 
-## Skills installed (48, all on `main`)
-humanizer, unlazy, impeccable, task-observer, find-skills, lemo-opuscar, superpowers (15: brainstorming, writing-plans, executing-plans, systematic-debugging, test-driven-development, verification-before-completion, requesting/receiving-code-review, using-git-worktrees, finishing-a-development-branch, subagent-driven-development, dispatching-parallel-agents, using-superpowers, writing-skills, diagnosing-superpowers), ui-ux-pro-max, design, design-system, ui-styling, brand, banner-design, slides, ppt-master, diagram-design, watch (bradautomates/claude-video), voicestudio (debpalash/VoiceStudio, AGPL-3.0), 12 OpenSEO skills (every-app/open-seo; they need the paid OpenSEO MCP connector, not configured), and four video/drawing skills added 16 Nov 2026: claude-drawing-skill (draws pictures in code, 83 styles, free), bang-motion (browser motion graphics to MP4, free), huashu-art-motion (animation styles and explainer films, free, Chinese), vox-director (paper-collage explainer videos, needs a paid Atlas Cloud key). Their demo videos, showcase media and `examples/` folders were left out to keep the repo small.
+## Skills (53, all in `.claude/skills/`)
+The map is **`SKILLS.md`** at the repo root: purpose, needs, mode and upstream source for every skill. Read it before choosing or adding a skill, and update it when one is added.
+- Skills are never removed to save space (owner's rule); organise instead. Folder size does not slow Claude; only descriptions do, so keep descriptions short.
+- 14 skills are **manual-only** (`disable-model-invocation: true`, run with `/name`) because they need a paid key or an app that is not set up: the 12 OpenSEO skills, `voicestudio`, `vox-director`. Delete that line from a skill's `SKILL.md` to make it automatic again.
+- `claude-drawing-skill` has a short description; its original 31,000-character one is kept in its body under "Full style list".
+- `ppt-master` (about 79 MB) and `huashu-art-motion` (about 34 MB) are the heavy ones.
 - Not installed on purpose: claude-mem (needs a background worker and hooks). Plugin hooks from any repo are never installed, only SKILL.md folders and their LICENSE files.
 - Full app clones lived in `/home/user/` (Open-Generative-AI, VoiceStudio, open-seo, claude-video, freellmapi, awesome-freellm-apis). They vanish with the container.
 

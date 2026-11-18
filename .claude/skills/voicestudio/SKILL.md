@@ -1,5 +1,6 @@
 ---
 name: voicestudio
+disable-model-invocation: true
 description: Generate local speech with saved or designed voices, transcribe audio, and automate dubbing or narration workflows through VoiceStudio's REST API or MCP server. Use when the user wants to work with VoiceStudio audio or connect it to an agent or automation.
 ---
 
